@@ -23,6 +23,9 @@ cd Python-$pver/
 make
 sudo make altinstall
 
+echo export PATH='/usr/local/bin:$PATH' >> ~/.bash_profile
+source ~/.bash_profile
+
 python3.9 --version
 
 echo "$(tput setaf 2)Python is installed successfully!$(tput sgr0)"
